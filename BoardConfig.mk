@@ -1,4 +1,4 @@
-include vendor/lge/thunderg/BoardConfigVendor.mk
+include vendor/lge/p500/BoardConfigVendor.mk
 
 
 
@@ -13,10 +13,10 @@ TARGET_ARCH_VARIANT := armv6-vfp
 TARGET_CPU_ABI := armeabi-v6l
 TARGET_CPU_ABI2 := armeabi
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
-TARGET_BOOTLOADER_BOARD_NAME := thunderg
+TARGET_BOOTLOADER_BOARD_NAME := p500
 TARGET_PROVIDES_INIT_TARGET_RC := true
 TARGET_PROVIDES_LIBRIL := true
-TARGET_OTA_ASSERT_DEVICE := thunderg
+TARGET_OTA_ASSERT_DEVICE := p500
 
 #BOOT AND BOOTLOADER
 TARGET_NO_BOOTLOADER := true
@@ -29,7 +29,7 @@ BOARD_USE_FROYO_LIBCAMERA := true
 #Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_CUSTOM_BRCM_PATCHRAM_PLUS := ../../../device/lge/thunderg/prebuilt/brcm_patchram_plus.c
+BOARD_CUSTOM_BRCM_PATCHRAM_PLUS := ../../../device/lge/p500/prebuilt/brcm_patchram_plus.c
 
 #RadioFM
 BOARD_HAVE_FM_RADIO := true
@@ -70,14 +70,14 @@ BOARD_USES_QCOM_LEGACY := true
 
 #GPS
 BOARD_USES_QCOM_GPS := true
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := thunderg
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := p500
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 
 #Jit(for now disabled)
 WITH_JIT := false
 
 #Graphics
-BOARD_EGL_CFG := vendor/lge/thunderg/proprietary/lib/egl/egl.cfg
+BOARD_EGL_CFG := vendor/lge/p500/proprietary/lib/egl/egl.cfg
 BOARD_AVOID_DRAW_TEXTURE_EXTENSION := true
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 TARGET_DO_NOT_SETS_CAN_DRAW := true
@@ -88,7 +88,7 @@ TARGET_USES_16BPPSURFACE_FOR_OPAQUE := true
 
 # MASS STORAGE
 BOARD_USE_USB_MASS_STORAGE_SWITCH := true
-BOARD_CUSTOM_USB_CONTROLLER := ../../device/lge/thunderg/prebuilt/UsbController.cpp
+BOARD_CUSTOM_USB_CONTROLLER := ../../device/lge/p500/prebuilt/UsbController.cpp
 BOARD_UMS_LUNFILE := /sys/devices/platform/msm_hsusb/gadget/lun0/file
 
 # OFFLINE CHARGING
